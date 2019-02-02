@@ -19836,9 +19836,10 @@ module.exports = About = React.createClass({displayName: "About",
                             I completed my schooling and undergraduate studies in <a href = \"https://en.wikipedia.org/wiki/Pune\" style = \"color: #ff6a56\">Pune<a>, <a href=\"https://en.wikipedia.org/wiki/India\" style = \"color: #ff6a56\">India</a>.\
                   <br/><br/>My interests primarily lie in:<br/>\
                   <ul> \
-                    <li>Machine Learning / Data Science</li> \
-                    <li>Natural Language Processing</li> \
+                    <li>Deep Learning / Machine Learning</li> \
+                    <li>Artificial Intelligence</li> \
                     <li>Speech Processing</li> \
+                    <li>Natural Language Processing</li> \
                     <li>Dialog Systems</li> \
                     <li>Multimodal Interaction</li> \
                     <li>Startups / Technology</li> \
@@ -20212,7 +20213,7 @@ var content={
     },
     {
       "title": "Curriculum Vitae",
-      "url": "./RutujaResume2018.pdf",
+      "url": "./RutujaResume2019.pdf",
       "icon": "file pdf outline",
       "color": "purple"
     },
