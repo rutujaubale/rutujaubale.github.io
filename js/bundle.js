@@ -19948,13 +19948,16 @@ module.exports = Publications = React.createClass({displayName: "Publications",
       "content":{
         "segment_content": "<ol> \
                     <li> <u>Rutuja Ubale</u>, Yao Qian, Keelan Evanini, &quot;<font color=\"purple\"><b>Exploring end-to-end attention-based neural networks for native language identification.</b></font>&quot; in <i>Proceedings of the IEEE Workshop on Spoken Language Technology (SLT 2018)</i>, Athens, Greece, December, 2018. IEEE.</li>\
-                    <a href=\"./papers/slt2018-nli.pdf\" style=\"color:#F54C77\">[pdf]</a>\
+                    <a href=\"./papers/slt2018-nli.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"./papers/slt2018-nli-poster.pdf\" style=\"color:#F54C77\">[poster]</a> \
                     </br>\
                     <li>Yao Qian, <u>Rutuja Ubale</u>, Matthew Mulholland, Keelan Evanini, Xinhao Wang, &quot;<font color=\"purple\"><b>A prompt-aware neural network approach to content-based scoring of non-native spontaneous speech.</b></font>&quot; in <i>Proceedings of the IEEE Workshop on Spoken Language Technology (SLT 2018)</i>, Athens, Greece, December, 2018. IEEE.</li> \
+                    <a href=\"./papers/slt2018-content_scoring.pdf\" style=\"color:#F54C77\">[pdf]</a>\
                     </br>\
                     <li>Yao Qian, <u>Rutuja Ubale</u>, Patrick Lange, Keelan Evanini, &quot;<font color=\"purple\"><b>From Speech Signals to Semantics - Tagging Performance at Acoustic, Phonetic and Word Levels.</b></font>&quot; in <i>Proceedings of the 11th International Symposium on Chinese Spoken Language Processing (ISCSLP 2018)</i>, Taipei, Taiwan, November, 2018. IEEE.</li> \
+                    <a href=\"./papers/iscslp2018-slu.pdf\" style=\"color:#F54C77\">[pdf]</a>\
                     </br>\
                     <li>Zhaoheng Ni, <u>Rutuja Ubale</u>, Yao Qian, Michael Mandel, Su-Youn Yoon, Abhinav Misra, David Suendermann-Oeft, &quot;<font color=\"purple\"><b>Unusable Spoken Response Detection with BLSTM Neural Networks.</b></font>&quot; in <i>Proceedings of the 11th International Symposium on Chinese Spoken Language Processing (ISCSLP 2018)</i>, Taipei, Taiwan, November, 2018. IEEE.</li> \
+                    <a href=\"./papers/iscslp2018-2.pdf\" style=\"color:#F54C77\">[pdf]</a>\
                     </br>\
                     <li> Vikram Ramanarayanan, David Pautler, Patrick Lange, Eugene Tsuprun, <u>Rutuja Ubale</u>, Keelan Evanini, and David Suendermann-Oeft, &quot;<font color=\"purple\"><b>Toward Scalable Dialog Technology for Conversational Language Learning: A Case Study of the TOEFL® MOOC.</b></font>&quot in <i>Proceedings of Interspeech 2018</i>, pp. 1960-1961, Hyderabad, India, September, 2018.</li> \
                     <a href=\"./papers/interspeech2018-dialogdemo.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://www.isca-speech.org/archive/Interspeech_2018/abstracts/3032.html\" style=\"color:#F54C77\">[isca]</a> \
