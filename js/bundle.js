@@ -19937,6 +19937,132 @@ module.exports = DividerBlock = React.createClass({displayName: "DividerBlock",
   }
 })
 
+},{"./components/App.react.js":172,"react":156}],171:[function(require,module,exports){
+var React = require('react');
+var DividerBlock = require('./DividerBlock.react.js');
+var SectionHeader = require('./SectionHeader.react.js')
+
+module.exports = Publications = React.createClass({displayName: "Publications",
+  getInitialState: function(){
+    return({
+      "content":{
+        "segment_content": "<ol> \
+                    <li> <u>Rutuja Ubale</u>, Yao Qian, Keelan Evanini, &quot;<font color=\"purple\"><b>Exploring end-to-end attention-based neural networks for native language identification.</b></font>&quot; in <i>Proceedings of the IEEE Workshop on Spoken Language Technology (SLT 2018)</i>, Athens, Greece, December, 2018. IEEE.</li>\
+                    <a href=\"./papers/slt2018-nli.pdf\" style=\"color:#F54C77\">[pdf]</a>\
+                    </br>\
+                    <li>Yao Qian, <u>Rutuja Ubale</u>, Matthew Mulholland, Keelan Evanini, Xinhao Wang, &quot;<font color=\"purple\"><b>A prompt-aware neural network approach to content-based scoring of non-native spontaneous speech.</b></font>&quot; in <i>Proceedings of the IEEE Workshop on Spoken Language Technology (SLT 2018)</i>, Athens, Greece, December, 2018. IEEE.</li> \
+                    </br>\
+                    <li>Yao Qian, <u>Rutuja Ubale</u>, Patrick Lange, Keelan Evanini, &quot;<font color=\"purple\"><b>From Speech Signals to Semantics - Tagging Performance at Acoustic, Phonetic and Word Levels.</b></font>&quot; in <i>Proceedings of the 11th International Symposium on Chinese Spoken Language Processing (ISCSLP 2018)</i>, Taipei, Taiwan, November, 2018. IEEE.</li> \
+                    </br>\
+                    <li>Zhaoheng Ni, <u>Rutuja Ubale</u>, Yao Qian, Michael Mandel, Su-Youn Yoon, Abhinav Misra, David Suendermann-Oeft, &quot;<font color=\"purple\"><b>Unusable Spoken Response Detection with BLSTM Neural Networks.</b></font>&quot; in <i>Proceedings of the 11th International Symposium on Chinese Spoken Language Processing (ISCSLP 2018)</i>, Taipei, Taiwan, November, 2018. IEEE.</li> \
+                    </br>\
+                    <li> Vikram Ramanarayanan, David Pautler, Patrick Lange, Eugene Tsuprun, <u>Rutuja Ubale</u>, Keelan Evanini, and David Suendermann-Oeft, &quot;<font color=\"purple\"><b>Toward Scalable Dialog Technology for Conversational Language Learning: A Case Study of the TOEFL® MOOC.</b></font>&quot in <i>Proceedings of Interspeech 2018</i>, pp. 1960-1961, Hyderabad, India, September, 2018.</li> \
+                    <a href=\"./papers/interspeech2018-dialogdemo.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://www.isca-speech.org/archive/Interspeech_2018/abstracts/3032.html\" style=\"color:#F54C77\">[isca]</a> \
+                    </br>\
+                    <li>Keelan Evanini, Matthew Mulholland, <u>Rutuja Ubale</u>, Yao Qian, Robert Pugh, Vikram Ramanarayanan, and Aoife Cahill, &quot;<font color=\"purple\"><b>Improvements to an Automated Content Scoring System for Spoken CALL Responses: The ETS Submission to the Second Spoken CALL Shared Task.</b></font>&quot in <i>Proceedings of Interspeech 2018</i>, pp. 2379-238, Hyderabad, India, September, 2018.</li> \
+                    <a href=\"./papers/interspeech2018-spokenCALL.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://www.isca-speech.org/archive/Interspeech_2018/abstracts/2362.html\" style=\"color:#F54C77\">[isca]</a> \
+                    </br>\
+                    <li>Chee Wee Leong, Lei Liu, <u>Rutuja Ubale</u>, and Lei Chen, &quot;<font color=\"purple\"><b>Toward large-scale automated scoring of scientific visual models.</b></font>&quot in <i>Proceedings of the Fifth Annual ACM Conference on Learning at Scale</i>, (p. 23), London, United Kingdom, June, 2018. ACM.</li> \
+                    </br>\
+                    <li>Yao Qian, <u>Rutuja Ubale</u>, Vikram Ramanarayanan, Patrick Lange, David Suendermann-Oeft, Keelan Evanini, and Eugene Tsuprun, &quot;<font color=\"purple\"><b>Exploring ASR-free end-to-end modeling to improve spoken language understanding in a cloud-based dialog system.</b></font>&quot in <i>Proceedings of 2017 IEEE Workshop on Automatic Speech Recognition and Understanding (ASRU 2017)</i>, pp. 569-576, Okinawa, Japan, December, 2017. IEEE. </li>\
+                    <a href=\"./papers/asru2017-slu.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://ieeexplore.ieee.org/abstract/document/8268992\" style=\"color:#F54C77\">[ieee]</a> \
+                    </br>\
+                    <li>Yao Qian, Keelan Evanini, Patrick L. Lange, Robert A. Pugh, <u>Rutuja Ubale</u>, Frank K. Soong, &quot;<font color=\"purple\"><b>Improving native language (L1) identification with better VAD and TDNN trained separately on native and non-native English corpora,</b></font>&quot in <i>Proceedings of 2017 IEEE Workshop on Automatic Speech Recognition and Understanding (ASRU 2017)</i>, pp. 606-613, Okinawa, Japan, December, 2017. IEEE. </li>\
+                    <a href=\"./papers/asru2017-nli.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://ieeexplore.ieee.org/abstract/document/8268987\" style=\"color:#F54C77\">[ieee]</a> \
+                  </ol>",
+      }
+    });
+  },
+  componentDidMount: function(){
+    $('.menuItem').transition({
+      animation  : 'fade in',
+      duration   : '0.5s'
+    });   
+    $(this.refs["section"].getDOMNode()).css("background","rgba(255,239,238,1)");
+    $(this.refs["sectionHeader"].refs["titleHeader"].getDOMNode()).css("color","black");
+  },
+  render: function(){
+    classes = "ui "
+    return( 
+    React.createElement("div", {className: classes, ref: "section"},      
+      React.createElement(SectionHeader, {iconName: "book", title: "Publications", ref: "sectionHeader"}), 
+      React.createElement(DividerBlock, {quantity: "2"}), 
+      React.createElement(PublicationsContent, {self: this, className: "pink"}),
+      React.createElement(DividerBlock, {quantity: "2"})    
+    )
+    );
+  }
+})
+
+PublicationsContent = React.createClass({displayName: "PublicationsContent",
+  render: function(){
+    var content = this.props.self.state.content;
+    var segment_content = content.segment_content;
+    var image_url = content.image_url;
+    var additionalClasses = this.props.className ? this.props.className : "";
+    return(
+      React.createElement("div", {className: "ui container center aligned raised segment " + additionalClasses},    
+        React.createElement("img", {className: "ui centered image fluid big", src: image_url}), 
+          React.createElement(DividerBlock, {quantity: "1"}),           
+          React.createElement("div", {className: "ui left aligned basic segment"}, 
+          React.createElement("div", {className: "ui ", dangerouslySetInnerHTML: {__html: segment_content}})
+          ), 
+          React.createElement("div", {className: "ui two column grid"}, 
+            React.createElement("div", {className: "column"}                      
+          ),  
+            React.createElement("div", {className: "column"}
+          )                            
+        )
+      )
+    );
+  } 
+})
+
+},{"./DividerBlock.react.js":161,"./SectionHeader.react.js":169,"react":156}],159:[function(require,module,exports){
+var React = require('react');
+var SiteContainer = require('./SiteContainer.react.js')
+
+module.exports = App = React.createClass({displayName: "App",
+  render: function(){
+    return(
+      React.createElement(SiteContainer, null)
+    );
+  }
+})
+
+},{"./SiteContainer.react.js":170,"react":156}],160:[function(require,module,exports){
+var React = require('react');
+
+module.exports = Cover = React.createClass({displayName: "Cover",
+  render: function(){
+  classes = "ui "+ this.props.className
+    return( 
+      React.createElement("div", {className: classes}
+      )
+    );
+  }
+})
+
+},{"react":156}],161:[function(require,module,exports){
+var React = require('react');
+
+module.exports = DividerBlock = React.createClass({displayName: "DividerBlock", 
+  componentDidMount:function(){
+  },
+  render: function(){
+    var dividerContent = [];
+    for(var i=0; i<parseInt(this.props.quantity); i++){
+      var key = "divider_"+i;
+      dividerContent.push(React.createElement("div", {className: "ui row", key: key}))
+    }   
+    return(   
+      React.createElement("div", {className: "ui grid", ref: "grid"}, 
+        dividerContent
+      )
+    );
+  }
+})
+
 },{"react":156}],162:[function(require,module,exports){
 var React = require('react');
 var DividerBlock = require('./DividerBlock.react.js');
@@ -20334,6 +20460,7 @@ var React = require('react')
 var menuItems = [
   {'iconName': 'home', 'header': 'Home', 'id': 'id_home', 'url': '#home'},
   {'iconName': 'user', 'header': 'About me', 'id': 'id_about', 'url': '#about'},
+  {'iconName': 'book', 'header': 'Publications', 'id':'id_publications', 'url': "#publications"},
   {'iconName': 'university', 'header': 'Education and Experience', 'id': 'id_experience', 'url': '#experience'},
   {'iconName': 'flask', 'header': 'Projects', 'id': 'id_projects', 'url': '#projects'},
   {'iconName': 'setting', 'header': 'Activity', 'id':'id_myactivity', 'url': "#myactivity"},
@@ -20485,6 +20612,7 @@ var React = require('react');
 var menuItems = [
   {'iconName': 'home', 'header': 'Home', 'id': 'id_home', 'url': '#home'},
   {'iconName': 'user', 'header': 'About me', 'id': 'id_about', 'url': '#about'},
+  {'iconName': 'book', 'header': 'Publications', 'id':'id_publications', 'url': "#publications"},
   {'iconName': 'university', 'header': 'Education and Experience', 'id': 'id_experience', 'url': '#experience'},
   {'iconName': 'flask', 'header': 'Projects', 'id': 'id_projects', 'url': '#projects'},
   {'iconName': 'setting', 'header': 'Activity', 'id':'id_myactivity', 'url': "#myactivity"},
@@ -20976,11 +21104,12 @@ var Home = require('./Home.react.js')
 var Cover = require('./Cover.react.js')
 var MyActivity = require('./Activity.react.js')
 var About = require('./About.react.js')
+var Publications = require('./Publications.react.js')
 var Projects = require('./Projects.react.js')
 var Footer = require('./Footer.react.js')
 var Experience = require('./Experience.react.js')
 
-var ref_ids = ["id_home","id_about","id_experience","id_projects","id_myactivity"];
+var ref_ids = ["id_home","id_about", "id_publications","id_experience","id_projects","id_myactivity"];
 
 module.exports = SiteContainer = React.createClass({displayName: "SiteContainer",
   setMobileOrDesktop: function(){
@@ -21078,7 +21207,8 @@ module.exports = SiteContainer = React.createClass({displayName: "SiteContainer"
         menu, 
         React.createElement("div", {className: "content"},          
           React.createElement(Home, {ref: "id_home"}), 
-          React.createElement(About, {ref: "id_about"}),          
+          React.createElement(About, {ref: "id_about"}),
+          React.createElement(Publications, {ref: "id_publications"}),          
           React.createElement(Experience, {ref: "id_experience"}), 
           React.createElement(Projects, {ref: "id_projects"}),          
           React.createElement(MyActivity, {ref: "id_myactivity"}), 
@@ -21089,4 +21219,4 @@ module.exports = SiteContainer = React.createClass({displayName: "SiteContainer"
   }
 })
 
-},{"./About.react.js":158,"./Cover.react.js":160,"./Experience.react.js":162,"./Footer.react.js":163,"./Home.react.js":164,"./Menu.react.js":165,"./MobileMenu.react.js":166,"./Activity.react.js":167,"./Projects.react.js":168,"react":156}]},{},[157]);
+},{"./About.react.js":158,"./Cover.react.js":160,"./Publications.react.js":171,"./Cover.react.js":160,"./Experience.react.js":162,"./Footer.react.js":163,"./Home.react.js":164,"./Menu.react.js":165,"./MobileMenu.react.js":166,"./Activity.react.js":167,"./Projects.react.js":168,"react":156}]},{},[157]);
