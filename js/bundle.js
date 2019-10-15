@@ -19948,7 +19948,7 @@ module.exports = Publications = React.createClass({displayName: "Publications",
       "content":{
         "segment_content": "<ol> \
                     <li> <u>Rutuja Ubale</u>, Vikram Ramanarayanan, Yao Qian, Keelan Evanini, Chee Wee Leong, and Chong Min Lee, &quot;<font color=\"purple\"><b>Native language identification from raw waveforms using deep convolutional neural networks with attentive pooling</b></font>&quot; in <i>Proceedings of 2019 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU 2019)</i>, Sentosa, Singapore, December 14-18 December 2019. IEEE.</li>\
-                    <a href=\"./ASRU_NLI_final.pdf\" style=\"color:#F54C77\">[pdf]</a> \
+                    <a href=\"./papers/ASRU_NLI_final.pdf\" style=\"color:#F54C77\">[pdf]</a> \
                     </br>\
                     <li> Yao Qian, Patrick Lange, Keelan Evanini, Robert Pugh, <u>Rutuja Ubale</u>, Matthew Mulholland, and Xinhao Wang, &quot;<font color=\"purple\"><b>Neural approaches to automated speech scoring of monologue and dialogue responses</b></font>&quot; in <i>Proceedings of The 44th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2019)</i>, Brighton, U.K., May 12-17, 2019. IEEE.</li>\
                     \
