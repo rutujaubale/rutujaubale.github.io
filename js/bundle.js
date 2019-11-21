@@ -20086,13 +20086,23 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
     return({
       "content": {
         "ets-present":{
+          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
+          "image_url":  "./images/3b472e9.png",  
+          "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
+          "industry": "<p style=\"color:#9E1C01;\"> Dialog, Multimodal, and Speech Research Center (DIAMONDS)</p>",
+          "companyDescription": "",
+          "jobTitle": "Research Engineer - Speech, NLP and Dialog",
+          "timeline": "November 2019 - Present <br/> San Francisco Bay Area, California ",
+          "jobDescription": "",
+        },
+        "ets-are":{
           "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS. I work majorly on the spoken dialog system HALEF and contribute to several other projects involving natural language processing and multimodal processing. ",
           "image_url":  "./images/3b472e9.png",  
           "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
           "industry": "<p style=\"color:#9E1C01;\"> Dialog, Multimodal, and Speech Research Center (DIAMONDS)</p>",
           "companyDescription": "",
           "jobTitle": "Associate Research Engineer - Spoken and Multimodal Dialog Systems",
-          "timeline": "February 2017 - Present <br/> San Francisco Bay Area, California ",
+          "timeline": "February 2017 - October 2019 <br/> San Francisco Bay Area, California ",
           "jobDescription": "",
         },
         "ucla-cntd":{
@@ -20243,7 +20253,7 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
 Timeline = React.createClass({displayName: "Timeline",
   render: function(){
     var self = this.props.self
-    var companies = ["ets-present","ucla-cntd","yfrs","ets-intern","ucla-start","vit","hsc-scholar","fergusson","ssc-scholar","annes"]
+    var companies = ["ets-present", "ets-are","ucla-cntd","yfrs","ets-intern","ucla-start","vit","hsc-scholar","fergusson","ssc-scholar","annes"]
     var markup = companies.map(function(item){
         return(
           React.createElement(TimelineElement, {contentKey: item, self: self, key: item})
@@ -20334,7 +20344,7 @@ module.exports = Footer = React.createClass({displayName: "Footer",
 var React = require('react');
 var DividerBlock = require('./DividerBlock.react.js')
 var content={
-  'introduction': "Hello! I'm Rutuja. I'm currently an Associate Research Engineer in the Natural Language Processing (NLP), Speech and DIAMONDS Research groups at Educational Testing Service (ETS). I graduated with a Master's degree in <a href='http://www.ee.ucla.edu/'>Electrical Engineering </a> from the <a href='http://www.ucla.edu/'>University of California, Los Angeles</a>. At UCLA, I worked with \
+  'introduction': "Hello! I'm Rutuja. I'm a Research Engineer in the Natural Language Processing (NLP), Speech and DIAMONDS Research groups at Educational Testing Service (ETS). I graduated with a Master's degree in <a href='http://www.ee.ucla.edu/'>Electrical Engineering </a> from the <a href='http://www.ucla.edu/'>University of California, Los Angeles</a>. At UCLA, I worked with \
            <a href=\"http://www.ee.ucla.edu/abeer-alwan/\">Prof. Abeer Alwan's </a> research group - <a href='http://www.seas.ucla.edu/spapl/index.html'>Speech Processing and Auditory Perception Laboratory (SPAPL)</a>.\
            In summer 2016, I worked with the Dialog, Multimodal and Speech (DIAMONDS) research group at ETS, San Francisco on designing a Statistical Spoken Language Understanding component called <a href='https://pypi.python.org/pypi/halef-SETU/0.0.5'>SETU </a> for the <a href = 'https://sourceforge.net/projects/halef/'>HALEF </a> spoken dialog system.\
            ",
