@@ -19832,7 +19832,7 @@ module.exports = About = React.createClass({displayName: "About",
                             from the <a href = \"https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles\" style = \"color: #ff6a56\">University of California, Los Angeles</a> \
                             in December, 2016. I received a B.Tech degree in Electronics Engineering with Honors in \
                             VLSI Design from <a href=\"http://www.vit.edu\" style = \"color: #ff6a56\">Vishwakarma Institute of Technology</a> in 2015. After completing my primary and secondary school \
-                            education from <a href=\"http://cjmstannespune.org/WebPages/Home.aspx\" style = \"color: #ff6a56\">St. Anne's High School</a>, I went to <a href=\"https://en.wikipedia.org/wiki/Fergusson_College\" style = \"color: #ff6a56\">Fergusson College</a> to complete my higher secondary school education.\
+                            education from <a href=\"https://cjmstannespune.org/\" style = \"color: #ff6a56\">St. Anne's High School</a>, I went to <a href=\"https://en.wikipedia.org/wiki/Fergusson_College\" style = \"color: #ff6a56\">Fergusson College</a> to complete my higher secondary school education.\
                             I completed my schooling and undergraduate studies in <a href = \"https://en.wikipedia.org/wiki/Pune\" style = \"color: #ff6a56\">Pune<a>, <a href=\"https://en.wikipedia.org/wiki/India\" style = \"color: #ff6a56\">India</a>.\
                   <br/><br/>My interests primarily lie in:<br/>\
                   <ul> \
@@ -20220,7 +20220,7 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
         "annes":{
           "segment_content": "Ranked 2nd in the class of 180 students in the 10th grade board (SSC) exams. </br> Recepient of several scholarships conferred by the school for academic excellence at SSC examination. </br> Recepient of General Proficiency Award for 7 consecutive years for being in the top 1% of the class. </br> Activities: Art, Music, Drama, Quiz club",
           "image_url":  "./images/stannes.png", 
-          "companyName": "<p style=\"color:#DC3615;\">St. Annes's High School</p>",
+          "companyName": "<p style=\"color:#DC3615;\">St. Anne's High School</p>",
           "industry": "<p style=\"color:#FFC300;\">Primary and Secondary School</p>",
           "companyDescription": "",
           "jobTitle": "Secondary School Certificate (SSC) - First Class with Distinction",
