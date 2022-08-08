@@ -19983,6 +19983,7 @@ module.exports = Publications = React.createClass({displayName: "Publications",
                     <li>Yao Qian, <u>Rutuja Ubale</u>, Vikram Ramanaryanan, Patrick L. Lange, David Suendermann-Oeft, Keelan Evanini, and Eugene Tsuprun, &quot;<font color=\"purple\"><b>Towards End-to-End Modeling of Spoken Language Understanding in a Cloud-based Spoken Dialog System,</b></font>&quot in <i>Proceedings of SEMDIAL 2017 (SaarDial) Workshop on the Semantics and Pragmatics of Dialogue</i>, pp. 160-161, Saarbrücken, Germany, August, 2017. </li>\
                     <a href=\"./papers/SemDial2017_e2eslu.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://www.isca-speech.org/archive/Semdial_2017/abstracts/SemDial_2017_SaarDial_paper_18.html\" style=\"color:#F54C77\">[isca]</a> \
                   </ol>",
+        "title": "Peer Reviewed Conferences and Journal Articles", 
       }
     });
   },
@@ -20013,11 +20014,13 @@ PublicationsContent = React.createClass({displayName: "PublicationsContent",
     var segment_content = content.segment_content;
     var image_url = content.image_url;
     var additionalClasses = this.props.className ? this.props.className : "";
+    var title = content.title;
     return(
       React.createElement("div", {className: "ui container center aligned raised segment " + additionalClasses},    
         React.createElement("img", {className: "ui centered image fluid big", src: image_url}), 
           React.createElement(DividerBlock, {quantity: "1"}),           
           React.createElement("div", {className: "ui left aligned basic segment"}, 
+          React.createElement("h2", null, title),
           React.createElement("div", {className: "ui ", dangerouslySetInnerHTML: {__html: segment_content}})
           ), 
           React.createElement("div", {className: "ui two column grid"}, 
@@ -20087,12 +20090,32 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
       "content": {
         "ets-present":{
           "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
+          "image_url":  "./images/ETS-AI-Labs-logo.png",  
+          "companyName": "<p style=\"color:#003083;\">Educational Testing Service (ETS) </p>",
+          "industry": "<p style=\"color:#FDB913;\"> AI Research Labs</p>",
+          "companyDescription": "",
+          "jobTitle": "Managing Senior Research Engineer",
+          "timeline": "March 2022 - Present <br/> San Francisco Bay Area, California ",
+          "jobDescription": "",
+        },
+        "ets-re2":{
+          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
+          "image_url":  "./images/3b472e9.png",  
+          "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
+          "industry": "<p style=\"color:#9E1C01;\"> AI Research Labs</p>",
+          "companyDescription": "",
+          "jobTitle": "Research Engineer - Speech, NLP and Dialog",
+          "timeline": "November 2019 - Present <br/> San Francisco Bay Area, California ",
+          "jobDescription": "",
+        },
+        "ets-re":{
+          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
           "image_url":  "./images/3b472e9.png",  
           "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
           "industry": "<p style=\"color:#9E1C01;\"> Dialog, Multimodal, and Speech Research Center (DIAMONDS)</p>",
           "companyDescription": "",
           "jobTitle": "Research Engineer - Speech, NLP and Dialog",
-          "timeline": "November 2019 - Present <br/> San Francisco Bay Area, California ",
+          "timeline": "November 2019 - February 2020 <br/> San Francisco Bay Area, California ",
           "jobDescription": "",
         },
         "ets-are":{
@@ -20253,7 +20276,7 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
 Timeline = React.createClass({displayName: "Timeline",
   render: function(){
     var self = this.props.self
-    var companies = ["ets-present", "ets-are","ucla-cntd","yfrs","ets-intern","ucla-start","vit","hsc-scholar","fergusson","ssc-scholar","annes"]
+    var companies = ["ets-present", "ets-re2", "ets-re", "ets-are","ucla-cntd","yfrs","ets-intern","ucla-start","vit","hsc-scholar","fergusson","ssc-scholar","annes"]
     var markup = companies.map(function(item){
         return(
           React.createElement(TimelineElement, {contentKey: item, self: self, key: item})
@@ -20344,15 +20367,14 @@ module.exports = Footer = React.createClass({displayName: "Footer",
 var React = require('react');
 var DividerBlock = require('./DividerBlock.react.js')
 var content={
-  'introduction': "Hello! I'm Rutuja. I'm a Research Engineer in the Natural Language Processing (NLP), Speech and DIAMONDS Research groups at Educational Testing Service (ETS). I graduated with a Master's degree in <a href='http://www.ee.ucla.edu/'>Electrical Engineering </a> from the <a href='http://www.ucla.edu/'>University of California, Los Angeles</a>. At UCLA, I worked with \
+  'introduction': "Hello! I'm Rutuja. I'm a Managing Senior Research Engineer in the AI Research Labs at Educational Testing Service (ETS). I graduated with a Master's degree in <a href='http://www.ee.ucla.edu/'>Electrical Engineering </a> from the <a href='http://www.ucla.edu/'>University of California, Los Angeles</a>. At UCLA, I worked with \
            <a href=\"http://www.ee.ucla.edu/abeer-alwan/\">Prof. Abeer Alwan's </a> research group - <a href='http://www.seas.ucla.edu/spapl/index.html'>Speech Processing and Auditory Perception Laboratory (SPAPL)</a>.\
-           In summer 2016, I worked with the Dialog, Multimodal and Speech (DIAMONDS) research group at ETS, San Francisco on designing a Statistical Spoken Language Understanding component called <a href='https://pypi.python.org/pypi/halef-SETU/0.0.5'>SETU </a> for the <a href = 'https://sourceforge.net/projects/halef/'>HALEF </a> spoken dialog system.\
            ",
   'greeting': "Rutuja Ubale <br/> ऋतुजा उबाळे",
   "profileName": "Rutuja Ubale",
   "profileDescription": "Computer Scientist",
-  "profileURL": "./images/20181224085904-2.jpeg",
-  "profileSummary": "Research Engineer | Speech Technology | Conversational AI",
+  "profileURL": "./images/20200426.jpg",
+  "profileSummary": "AI Strategy and Leadership | Speech Technology | Conversational AI",
   "profileHeaderButtons":[
   	{
       "title": "Google Scholar",
@@ -20362,7 +20384,7 @@ var content={
     },
     {
       "title": "Curriculum Vitae",
-      "url": "./RutujaResume2019.pdf",
+      "url": "./RutujaResume2022.pdf",
       "icon": "file pdf outline",
       "color": "purple"
     },
