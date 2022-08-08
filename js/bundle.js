@@ -19984,7 +19984,7 @@ module.exports = Publications = React.createClass({displayName: "Publications",
                     <a href=\"./papers/SemDial2017_e2eslu.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://www.isca-speech.org/archive/Semdial_2017/abstracts/SemDial_2017_SaarDial_paper_18.html\" style=\"color:#F54C77\">[isca]</a> \
                   </ol>",
         "title": "Peer Reviewed Conferences and Journal Articles", 
-      }
+    }
     });
   },
   componentDidMount: function(){
@@ -20002,7 +20002,9 @@ module.exports = Publications = React.createClass({displayName: "Publications",
       React.createElement(SectionHeader, {iconName: "book", title: "Publications", ref: "sectionHeader"}), 
       React.createElement(DividerBlock, {quantity: "2"}), 
       React.createElement(PublicationsContent, {self: this, className: "pink"}),
-      React.createElement(DividerBlock, {quantity: "2"})    
+      React.createElement(DividerBlock, {quantity: "2"}),
+      //React.createElement(PublicationsContent, {self: this, className: "pink"}),
+      //React.createElement(DividerBlock, {quantity: "2"})    
     )
     );
   }
@@ -20089,27 +20091,32 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
     return({
       "content": {
         "ets-present":{
-          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
+          "segment_content": "Managing the speech research engineering team that builds backend AI capabilities to score spoken responses for ETS’ \
+                             TOEFL family of assessments as well as feedback and personalized learning capabilities for next-generation prototype applications.",
           "image_url":  "./images/ETS-AI-Labs-logo.png",  
           "companyName": "<p style=\"color:#003083;\">Educational Testing Service (ETS) </p>",
-          "industry": "<p style=\"color:#FDB913;\"> AI Research Labs</p>",
+          "industry": "<p style=\"color:#FDB913;\"> AI Labs</p>",
           "companyDescription": "",
           "jobTitle": "Managing Senior Research Engineer",
           "timeline": "March 2022 - Present <br/> San Francisco Bay Area, California ",
           "jobDescription": "",
         },
         "ets-re2":{
-          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
-          "image_url":  "./images/3b472e9.png",  
-          "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
-          "industry": "<p style=\"color:#9E1C01;\"> AI Research Labs</p>",
+          "segment_content": "Led the research and development of backend capabilities including automatic speech recognition and speech \
+                              and natural language processing systems to automatically evaluate and provide feedback on spoken responses \
+                              for English Language Learners.",
+          "image_url":  "./images/ETS-AI-Labs-logo.png",  
+          "companyName": "<p style=\"color:#003083;\">Educational Testing Service (ETS) </p>",
+          "industry": "<p style=\"color:#FDB913;\"> AI Labs</p>",
           "companyDescription": "",
-          "jobTitle": "Research Engineer - Speech, NLP and Dialog",
-          "timeline": "November 2019 - Present <br/> San Francisco Bay Area, California ",
+          "jobTitle": "Research Engineer",
+          "timeline": "November 2019 - Feb 2022 <br/> San Francisco Bay Area, California ",
           "jobDescription": "",
         },
         "ets-re":{
-          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.",
+          "segment_content": "Led research and engineering for the development of ETS’ in-house speaker recognition system. <br/> \
+                              Worked on improvements to streaming ASR infrastructure, ASR confidence model, research and development of \
+                              speaking back components for English Language Learners and deep learning models for automated spoken response scoring",
           "image_url":  "./images/3b472e9.png",  
           "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
           "industry": "<p style=\"color:#9E1C01;\"> Dialog, Multimodal, and Speech Research Center (DIAMONDS)</p>",
@@ -20119,7 +20126,9 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
           "jobDescription": "",
         },
         "ets-are":{
-          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS. I work majorly on the spoken dialog system HALEF and contribute to several other projects involving natural language processing and multimodal processing. ",
+          "segment_content": "I work in the Natural Language Processing (NLP) and Speech group under the Research and Development Division at ETS.\
+                              I work majorly on the spoken dialog system HALEF and contribute to several other projects involving natural language \
+                              processing and multimodal processing.",
           "image_url":  "./images/3b472e9.png",  
           "companyName": "<p style=\"color:#052F83;\">Educational Testing Service (ETS) </p>",
           "industry": "<p style=\"color:#9E1C01;\"> Dialog, Multimodal, and Speech Research Center (DIAMONDS)</p>",
