@@ -20110,7 +20110,7 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
           "industry": "<p style=\"color:#FDB913;\"> AI Labs</p>",
           "companyDescription": "",
           "jobTitle": "Research Engineer",
-          "timeline": "November 2019 - Feb 2022 <br/> San Francisco Bay Area, California ",
+          "timeline": "March 2020 - Feb 2022 <br/> San Francisco Bay Area, California ",
           "jobDescription": "",
         },
         "ets-re":{
