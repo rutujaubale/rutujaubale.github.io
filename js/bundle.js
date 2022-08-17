@@ -20091,8 +20091,16 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
     return({
       "content": {
         "ets-present":{
-          "segment_content": "Managing the speech research engineering team that builds backend AI capabilities to score spoken responses for ETS’ \
-                             TOEFL family of assessments as well as feedback and personalized learning capabilities for next-generation prototype applications.",
+          "segment_content": "My day-to-day responsibilities include - <ul style=\"list-style-type:disc; font-size:95%;\"> \
+                            <li> Managing the Speech AI Research Engineering team that builds backend AI capabilities to score spoken responses for ETS’ \
+                             TOEFL family of assessments as well as feedback and personalized learning capabilities for next-generation prototype applications.</li>\
+                            <li> Leading the Applied Spoken Language Processing, a research science and dev team within the AI Labs </li> \
+                            <li> Working cross-functionally with multiple user facing application teams to create a roadmap for development of \
+                             AI powered learning-focused features for second language acquisition from inception to release of new features. </li> \
+                            <li> Defining the research and innovation scope and timelines for the capability development based on user needs and \
+                            leading the team to build solutions at scale. </li> \
+                            <li> Ensuring the capabilities we build are leading, cutting-edge and state-of-the-art and disseminated in academia. </li>\
+                            <li> Solving ETS' most ambitious problems and bringing ideas to life in a product. </li>",
           "image_url":  "./images/ETS-AI-Labs-logo.png",  
           "companyName": "<p style=\"color:#003083;\">Educational Testing Service (ETS) </p>",
           "industry": "<p style=\"color:#FDB913;\"> AI Labs</p>",
