@@ -19827,7 +19827,7 @@ module.exports = About = React.createClass({displayName: "About",
   getInitialState: function(){
     return({
       "content":{
-        "segment_content": "I'm an NLP & Speech Research Engineer based in <a href=\"https://en.wikipedia.org/wiki/San_Francisco_Bay_Area\" style = \"color: #ff6a56\">San Francisco Bay Area</a>.\
+        "segment_content": "I'm an AI Research engineer particularly focused in Speech, NLP and Dialogue Processing based in <a href=\"https://en.wikipedia.org/wiki/San_Francisco_Bay_Area\" style = \"color: #ff6a56\">San Francisco Bay Area</a>.\
                             Prior to joining ETS, I received an MS degree in Electrical Engineering with focus in speech and natural language processing\
                             from the <a href = \"https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles\" style = \"color: #ff6a56\">University of California, Los Angeles</a> \
                             in December, 2016. I received a B.Tech degree in Electronics Engineering with Honors in \
@@ -19950,7 +19950,7 @@ module.exports = Publications = React.createClass({displayName: "Publications",
                     <li> <u>Rutuja Ubale</u>, Vikram Ramanarayanan, Yao Qian, Keelan Evanini, Chee Wee Leong, and Chong Min Lee, &quot;<font color=\"purple\"><b>Native language identification from raw waveforms using deep convolutional neural networks with attentive pooling</b></font>&quot; in <i>Proceedings of 2019 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU 2019)</i>, Sentosa, Singapore, December 14-18 December 2019. IEEE.</li>\
                     <a href=\"./papers/ASRU_NLI_final.pdf\" style=\"color:#F54C77\">[pdf]</a> \
                     </br>\
-                    <li> Yao Qian, <u>Rutuja Ubale</u>, Patrick Lange, Keelan Evanini, and Frank Soong, &quot;<font color=\"purple\"><b>Spoken Language Understanding of Human-Machine Conversations for Language Learning Applications</b></font>&quot; in <i> Journal of Signal Processing Systems (accepted for publication)</i> November 2019.</li>\
+                    <li> Yao Qian, <u>Rutuja Ubale</u>, Patrick Lange, Keelan Evanini, and Frank Soong, &quot;<font color=\"purple\"><b>Spoken Language Understanding of Human-Machine Conversations for Language Learning Applications</b></font>&quot; in <i> Journal of Signal Processing Systems, 92(8), pp.805-817</i> November 2019.</li>\
                     <li>Chee Wee Leong, Katrina Roohr, Vikram Ramanarayanan, Michelle Martin-Raugh, Harrison Kell, <u>Rutuja Ubale</u>, Yao Qian, Zydrune Mladineo and Laura McCulla, &quot;<font color=\"purple\"><b>To Trust, or Not to Trust? A Study of Human Bias in Automated Video Interview Assessments.</b></font>&quot; in <i>Workshop on Interpreting and Explaining Visual Artificial Intelligence Models, International Conference on Computer Vision (ICCV 2019)</i>, Nov. 2019. IEEE.</li>\
                     <li>Chee Wee Leong, Katrina Roohr, Vikram Ramanarayanan, Michelle Martin-Raugh, Harrison Kell, <u>Rutuja Ubale</u>, Yao Qian, Zydrune Mladineo and Laura McCulla, &quot;<font color=\"purple\"><b>Are Humans Biased in Assessment of Video Interviews?</b></font>&quot; in <i>Adjunct of the 2019 International Conference on Multimodal Interaction (ICMI ’19)</i>. ACM, New York, NY, USA, Article 9, 5 pages.</li>\
                     <li> Yao Qian, Patrick Lange, Keelan Evanini, Robert Pugh, <u>Rutuja Ubale</u>, Matthew Mulholland, and Xinhao Wang, &quot;<font color=\"purple\"><b>Neural approaches to automated speech scoring of monologue and dialogue responses</b></font>&quot; in <i>Proceedings of The 44th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2019)</i>, Brighton, U.K., May 12-17, 2019. IEEE.</li>\
@@ -20096,10 +20096,10 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
                              TOEFL family of assessments as well as feedback and personalized learning capabilities for next-generation prototype applications.</li>\
                             <li> Leading the Applied Spoken Language Processing, a research science and dev team within the AI Labs </li> \
                             <li> Working cross-functionally with multiple user facing application teams to create a roadmap for development of \
-                             AI powered learning-focused features for second language acquisition from inception to release of new features. </li> \
+                             AI powered learning-focused features for second language acquisition from inception to release. </li> \
                             <li> Defining the research and innovation scope and timelines for the capability development based on user needs and \
                             leading the team to build solutions at scale. </li> \
-                            <li> Ensuring the capabilities we build are leading, cutting-edge and state-of-the-art and disseminated in academia. </li>\
+                            <li> Ensuring the capabilities we build are leading, cutting-edge, state-of-the-art and disseminated in academia. </li>\
                             <li> Solving ETS' most ambitious problems and bringing ideas to life in a product. </li>",
           "image_url":  "./images/ETS-AI-Labs-logo.png",  
           "companyName": "<p style=\"color:#003083;\">Educational Testing Service (ETS) </p>",
