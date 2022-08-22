@@ -20094,7 +20094,7 @@ module.exports = Experience = React.createClass({displayName: "Education and Exp
           "segment_content": "My day-to-day responsibilities include - <ul style=\"list-style-type:disc; font-size:95%;\"> \
                             <li> Managing the Speech AI Research Engineering team that builds backend AI capabilities to score spoken responses for ETS’ \
                              TOEFL family of assessments as well as feedback and personalized learning capabilities for next-generation prototype applications.</li>\
-                            <li> Leading the Applied Spoken Language Processing, a research science and dev team within the AI Labs </li> \
+                            <li> Leading the Applied Spoken Language Processing team, a research science and dev team within the AI Labs </li> \
                             <li> Working cross-functionally with multiple user facing application teams to create a roadmap for development of \
                              AI powered learning-focused features for second language acquisition from inception to release. </li> \
                             <li> Defining the research and innovation scope and timelines for the capability development based on user needs and \
