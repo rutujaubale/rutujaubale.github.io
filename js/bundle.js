@@ -19946,6 +19946,7 @@ module.exports = Publications = React.createClass({displayName: "Publications",
   getInitialState: function(){
     return({
       "content":{
+        "conferences":{
         "segment_content": "<ol> \
                     <li> <u>Rutuja Ubale</u>, Vikram Ramanarayanan, Yao Qian, Keelan Evanini, Chee Wee Leong, and Chong Min Lee, &quot;<font color=\"purple\"><b>Native language identification from raw waveforms using deep convolutional neural networks with attentive pooling</b></font>&quot; in <i>Proceedings of 2019 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU 2019)</i>, Sentosa, Singapore, December 14-18 December 2019. IEEE.</li>\
                     <a href=\"./papers/ASRU_NLI_final.pdf\" style=\"color:#F54C77\">[pdf]</a> \
@@ -19984,6 +19985,12 @@ module.exports = Publications = React.createClass({displayName: "Publications",
                     <a href=\"./papers/SemDial2017_e2eslu.pdf\" style=\"color:#F54C77\">[pdf]</a> <a href=\"https://www.isca-speech.org/archive/Semdial_2017/abstracts/SemDial_2017_SaarDial_paper_18.html\" style=\"color:#F54C77\">[isca]</a> \
                   </ol>",
         "title": "Peer Reviewed Conferences and Journal Articles", 
+    },
+    "magazine":{
+      "segment_content":"&quot;<font color=\"purple\"><b>The 2022 State of Speech Engines,</b></font>&quot <b> Speech Technology Magazine, </b> <i>Information Today, Inc. Publishing, </i> February 2022.\
+                         <a href=\"https://www.speechtechmag.com/Articles/ReadArticle.aspx?ArticleID=151325\" style=\"color:#F54C77\">[link to article]</a>",
+      "title": "Magazine Features",
+    },
     }
     });
   },
@@ -19999,12 +20006,12 @@ module.exports = Publications = React.createClass({displayName: "Publications",
     classes = "ui "
     return( 
     React.createElement("div", {className: classes, ref: "section"},      
-      React.createElement(SectionHeader, {iconName: "book", title: "Publications", ref: "sectionHeader"}), 
+      React.createElement(SectionHeader, {iconName: "book", title: "Publications & Media", ref: "sectionHeader"}), 
       React.createElement(DividerBlock, {quantity: "2"}), 
-      React.createElement(PublicationsContent, {self: this, className: "pink"}),
+      React.createElement(MagazineContent, {self: this, className: "pink"}),
       React.createElement(DividerBlock, {quantity: "2"}),
-      //React.createElement(PublicationsContent, {self: this, className: "pink"}),
-      //React.createElement(DividerBlock, {quantity: "2"})    
+      React.createElement(PublicationsContent, {self: this, className: "pink"}),
+      React.createElement(DividerBlock, {quantity: "2"})    
     )
     );
   }
@@ -20012,7 +20019,33 @@ module.exports = Publications = React.createClass({displayName: "Publications",
 
 PublicationsContent = React.createClass({displayName: "PublicationsContent",
   render: function(){
-    var content = this.props.self.state.content;
+    var content = this.props.self.state.content["conferences"];
+    var segment_content = content.segment_content;
+    var image_url = content.image_url;
+    var additionalClasses = this.props.className ? this.props.className : "";
+    var title = content.title;
+    return(
+      React.createElement("div", {className: "ui container center aligned raised segment " + additionalClasses},    
+        React.createElement("img", {className: "ui centered image fluid big", src: image_url}), 
+          React.createElement(DividerBlock, {quantity: "1"}),           
+          React.createElement("div", {className: "ui left aligned basic segment"}, 
+          React.createElement("h2", null, title),
+          React.createElement("div", {className: "ui ", dangerouslySetInnerHTML: {__html: segment_content}})
+          ), 
+          React.createElement("div", {className: "ui two column grid"}, 
+            React.createElement("div", {className: "column"}                      
+          ),  
+            React.createElement("div", {className: "column"}
+          )                            
+        )
+      )
+    );
+  } 
+})
+
+MagazineContent = React.createClass({displayName: "MagazineContent",
+  render: function(){
+    var content = this.props.self.state.content["magazine"];
     var segment_content = content.segment_content;
     var image_url = content.image_url;
     var additionalClasses = this.props.className ? this.props.className : "";
